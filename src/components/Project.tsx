@@ -1,5 +1,5 @@
 import React from "react";
-import { useCalculator } from "/Users/valentinahaddad/WebstormProjects/mp-3/src/components/calc.tsx"; // Adjust the import path as necessary
+import { useCalculator } from "./calc";
 
 const Project: React.FC = () => {
     const {
