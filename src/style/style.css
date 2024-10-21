@@ -1,4 +1,3 @@
-
 /* Importing custom fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap'); /* Universal selector to apply box-sizing and reset margin for all elements */
@@ -51,7 +50,7 @@
     font-size: calc(11px + 0.5vw); /* Dynamic font size based on viewport width */
     color: white; /* Text color set to white */
     font-style: italic; /* Italicized text style */
-    padding-bottom: 40px; /* Padding below the text for spacing */
+    padding-bottom: 10px; /* Padding below the text for spacing */
 }
 
 /* Remove default list styles for the navigation menu */
@@ -350,22 +349,16 @@ html, body {
     font-size: calc(48px + 1.5vw); /* Dynamically adjusts the font size based on viewport width */
     margin-top: 50px; /* Adds a 50px margin at the top for additional spacing */
 }
-
 .PageWrapperCalc {
-    /* Styles the main calculator wrapper with a light blue background, rounded corners, and bold, centered text.
-   The width adjusts for responsiveness, capped at 90%. Margin-left centers the wrapper, and box-sizing ensures padding
-   is included in the element's size. */
     background-color: lightblue;
     border-radius: 10px;
     text-align: center;
-    width: 30%;
+    max-width: 600px; /* Limit maximum width for responsiveness */
     font-size: calc(14px + 0.5vw);
     color: hotpink;
     font-weight: bold;
-    max-width: 90%; /* Using percentage for responsiveness */
     padding: 2%;
-    align-self: center; /* Center align the calculator */
-    margin-left: 40%;
+    margin: 0 auto; /* Center the wrapper horizontally */
     box-sizing: border-box;
 }
 
@@ -450,6 +443,17 @@ input[type="number"] {
     /* Styles the output text with dynamic font size and bold weight for emphasis. */
     font-size: calc(14px + 0.5vw);
     font-weight: bold;
+}
+
+.cal-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    text-align: center;
 }
 
 
@@ -660,8 +664,9 @@ input[type="number"] {
 
     /* Page wrapper for just teh calc/proj page*/
     .PageWrapperCalc {
-        max-width: 50%; /* Full width for small screens */
-        margin-left: 35%;
+        max-width: 90%; /* Increase the max-width to 90% for smaller screens */
+        width: 100%; /* Ensure the container takes up full width */
+        margin: 0 auto; /* Center it horizontally */
         align-items: center;
 
     }
@@ -700,10 +705,14 @@ input[type="number"] {
         text-align: left;
         margin-left: 1%;
     }
+    .cal-div {
+        justify-content: start;
+        padding: 10px;
+
+    }
 }
 
 .calculator-container {
-    background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -737,22 +746,15 @@ input[type="number"] {
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping when necessary */
+    justify-content: space-between; /* Add spacing between buttons */
 }
 
-button {
-    padding: 0.75rem;
-    width: 30%;
-    font-size: 1.1rem;
-    background-color: inherit;
-    color: inherit;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 0.5rem;
+.buttons button {
+    width: 32%; /* Ensure each button takes up a third of the row */
+    margin: 5px; /* Add margin around buttons */
+    font-size: 1rem; /* Adjust font size */
 }
 
 button:hover {
@@ -774,29 +776,25 @@ button:hover {
     }
 
     .buttons {
-        flex-direction: column;
+        flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+        justify-content: space-around; /* Spread the buttons out */
     }
 
-    button {
-        width: 100%;
+    .buttons button {
+        width: 30%; /* Adjust width for smaller screens */
+        font-size: 0.8rem; /* Adjust font size for smaller buttons */
     }
 
     #pageWrapperHeading {
         font-size: 2rem;
+    }
+
+    .nav-right li {
+        margin: 0 5px; /* Adjust spacing between links */
     }
 }
 #pageWrapperHeading {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1.5rem;
-}
-.cal-div {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f7f7f7;
-    text-align: center;
 }
