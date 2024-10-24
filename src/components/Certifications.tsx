@@ -1,19 +1,19 @@
-import React from "react";
 
-const Certifications: React.FC = () => {
+const Certifications = () => {
     return (
         <div>
             <h1 id="pageWrapperHeading">Certifications & Research</h1>
             <br />
 
             <div id="page-wrapperCR">
+                {/*  My actual picture of my cert  */}
                 <img
                     src="pic-in-main-two.png"
                     alt="Treasury Scholar internship Cert"
                     id="cert2"
                 />
             </div>
-
+            {/* My research */}
             <div className="workPartA">
                 <strong>Robot Jules!</strong> <br />
                 Research Assistant Boston University, Boston, MA <br />

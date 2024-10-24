@@ -1,7 +1,6 @@
-import React from "react";
 import { useCalculator } from "./calc";
 
-const Project: React.FC = () => {
+const Project = () => {
     const {
         num1,
         setNum1,

@@ -1,10 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/style.css';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
     return (
         <div>
+            {/*The nav bar on slides 5&6*/}
             <nav className="nav-bar">
                 <div className="nav-left">
                     <h1 className="nav-name">Valentina Haddad</h1>

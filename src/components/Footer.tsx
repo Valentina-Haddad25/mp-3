@@ -1,8 +1,6 @@
-import React from "react";
-
-const Footer: React.FC = () => {
+const Footer = () => {
     return (
-        <div>
+        <div>   {/* Nothing much here just the footer */}
             <footer className="footer">
                 <p>
                     All rights reserved by Valentina Haddad: <a href="#">Credits</a> &#169;

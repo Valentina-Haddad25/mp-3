@@ -1,8 +1,9 @@
-import React from "react";
 
-const Employment: React.FC = () => {
+
+const Employment = () => {
     return (
         <div>
+            {/* My Employment pageeeee #need to get a job after I graduate */}
             <h1 id="pageWrapperHeading">Employment</h1>
 
             <div className="workPartA">

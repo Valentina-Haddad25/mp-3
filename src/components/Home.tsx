@@ -1,8 +1,9 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
-const Home: React.FC = () => {
+const Home = () => {
     return (
         <div>
+            {/* My home page */}
             <h1 id="pageWrapperHeading">Home</h1>
 
             <div id="index-wrapper">

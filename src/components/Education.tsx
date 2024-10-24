@@ -1,10 +1,8 @@
-import React from 'react';
-
-const Education: React.FC = () => {
+const Education = () => {
     return (
         <div>
             <h1 id="pageWrapperHeading">Education</h1>
-
+            {/* My Education as well as a picture of BU seal */}
             <div className="education">
                 <p>
                     Boston University, Boston, MA <br />

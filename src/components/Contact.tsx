@@ -1,12 +1,13 @@
-import React from "react";
-
-const Contact: React.FC = () => {
+const Contact = () => {
     return (
         <div>
+            {/* Page heading */}
             <h1 id="pageWrapperHeading">Contact Me!</h1>
 
             <div className="Contain">
                 <div id="page-wrapperContact">
+
+                    {/* Email section */}
                     <div className="Contact">
                         <strong>Email: </strong>{" "}
                         <a href="mailto:vhaddad@bu.edu" target="_blank" rel="noopener noreferrer">
@@ -14,6 +15,7 @@ const Contact: React.FC = () => {
                         </a>
                     </div>
 
+                    {/* LinkedIn section */}
                     <div className="Contact">
                         <strong>LinkedIn: </strong>{" "}
                         <a
